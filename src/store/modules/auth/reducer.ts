@@ -1,20 +1,17 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+import { TUser } from 'store/modules/auth/types'
 
-type TUser = {
-  login: string
-}
-
-type TUserState = {
+type TAuthState = {
   user: TUser | null
 }
 
-const initialState: TUserState = { user: null }
+const initialState: TAuthState = { user: null }
 
 const userSlice = createSlice({
   name: 'auth',
   initialState,
   reducers: {
-    setUser(state: TUserState, action: PayloadAction<TUser>) {
+    setUser(state: TAuthState, action: PayloadAction<TUser>) {
       state.user = action.payload
     },
   },

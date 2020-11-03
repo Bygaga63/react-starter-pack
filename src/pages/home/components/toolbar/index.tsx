@@ -1,7 +1,7 @@
-import React, { FC } from 'react';
+import React, { FC } from 'react'
 
-type TProps = {};
+// type TProps = {}
 
-export const Toolbar: FC<TProps> = (props) => {
-  return <div>Toolbar</div>;
-};
+export const Toolbar: FC /*<TProps>*/ = () => {
+  return <div>Toolbar</div>
+}
