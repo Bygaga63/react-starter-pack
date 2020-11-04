@@ -24,4 +24,4 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'react/prop-types': [2, { ignore: ['children'] }],
   },
-};
+}
